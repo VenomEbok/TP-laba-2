@@ -35,6 +35,26 @@ int Worker::GetYearOfAdmission()
 	return this->year_of_admission_;
 }
 
+std::string Worker::GetPost()
+{
+	return this->post_;
+}
+
+void Worker::SetFullName(std::string full_name)
+{
+	this->full_name_ = full_name;
+}
+
+void Worker::SetYearOfAdmission(int year_of_admission)
+{
+	this->year_of_admission_ = year_of_admission;
+}
+
+void Worker::SetPost(std::string post)
+{
+	this->post_ = post;
+}
+
 Worker& Worker::operator=(Worker& copy)
 {
 	this->full_name_ = copy.full_name_;

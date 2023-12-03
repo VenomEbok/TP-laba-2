@@ -14,6 +14,10 @@ public:
 	Worker& operator =(Worker& copy);
 	std::string GetFullName();
 	int GetYearOfAdmission();
+	std::string GetPost();
+	void SetFullName(std::string full_name);
+	void SetYearOfAdmission(int year_of_admission);
+	void SetPost(std::string post);
 private:
 	std::string full_name_;
 	std::string post_;
